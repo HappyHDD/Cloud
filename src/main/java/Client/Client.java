@@ -15,7 +15,6 @@ import java.util.concurrent.CountDownLatch;
 
 public class Client {
     public static void main(String[] args) throws Exception {
-
         CountDownLatch cdl = new CountDownLatch(1);
         Socket socket = new Socket("localhost", 8188);
         ObjectEncoderOutputStream out = new ObjectEncoderOutputStream(socket.getOutputStream());
